@@ -1,11 +1,39 @@
 body {
-  background-color: rgb(225, 215, 215);
+  background-color: black;
   text-align: center;
 }
 body h1 {
   font-size: 40px;
 }
 
+.wrapped_div_1 {
+  background-color: rgb(225, 215, 215);
+}
+
+@media (max-width: 468px) {
+  .wrapped_div_2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 468px) and (max-width: 790px) {
+  .wrapped_div_2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 790px) {
+  .wrapped_div_2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 .error {
   color: rgb(128, 11, 11);
 }
@@ -43,7 +71,7 @@ body h1 {
 
 .main_text {
   position: absolute;
-  top: 50%;
+  top: 60%;
 }
 
 .arrow {
@@ -137,6 +165,14 @@ input[name=r] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation-name: sliderMoving;
+          animation-name: sliderMoving;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .slide {
@@ -162,6 +198,53 @@ input[name=r] {
   margin-left: -66.666%;
 }
 
+@-webkit-keyframes sliderMoving {
+  0% {
+    margin-left: 0%;
+  }
+  16% {
+    margin-left: 0%;
+  }
+  33.333% {
+    margin-left: -100%;
+  }
+  48% {
+    margin-left: -100%;
+  }
+  66.666% {
+    margin-left: -200%;
+  }
+  81% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes sliderMoving {
+  0% {
+    margin-left: 0%;
+  }
+  16% {
+    margin-left: 0%;
+  }
+  33.333% {
+    margin-left: -100%;
+  }
+  48% {
+    margin-left: -100%;
+  }
+  66.666% {
+    margin-left: -200%;
+  }
+  81% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
 .chapter-div {
   padding-left: 10px;
   padding-right: 10px;
@@ -181,7 +264,7 @@ input[name=r] {
     padding-right: 10px;
   }
 }
-@media (min-width: 468px) and (max-width: 700px) {
+@media (min-width: 468px) and (max-width: 790px) {
   .services {
     display: -ms-grid;
     display: grid;
@@ -191,7 +274,7 @@ input[name=r] {
     padding-right: 10px;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 790px) {
   .services {
     display: -ms-grid;
     display: grid;
@@ -229,7 +312,7 @@ input[name=r] {
           box-shadow: 5px 5px gray;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 790px) {
   .contacts-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -259,7 +342,7 @@ input[name=r] {
     height: 40px;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 790px) {
   .contacts-div {
     display: -ms-grid;
     display: grid;
@@ -302,6 +385,9 @@ input[name=r] {
       -ms-flex-align: center;
           align-items: center;
   gap: 5px;
+  text-align: center;
+}
+.contacts-sub-div p {
   text-align: center;
 }
 
