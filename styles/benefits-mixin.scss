@@ -1,0 +1,60 @@
+@import "variables";
+
+.benefits_div_0 {
+    padding-right: $card_padding_right;
+}
+
+@media (max-width: $small-screen) {
+    .benefits_div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+    }
+}
+
+@media (min-width: $small-screen) and (max-width: $medium-screen) {
+    .benefits_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+    }
+}
+
+@media (min-width: $medium-screen) {
+    .benefits_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+    }
+}
+
+.benefit_card {
+    // background-color: goldenrod;
+    h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 20px;
+    }
+    border: $card-border-width solid white;
+    border-radius: 15px;
+    min-height: 250px;
+    animation: benefitCard 4s infinite;
+    padding-top: $card-padding-up-down;
+    padding-bottom: $card-padding-up-down;
+    padding-left: $card-padding-sides;
+    padding-right: $card-padding-sides;
+}
+
+@keyframes benefitCard {
+    0% {
+        background-color: goldenrod;
+    }
+    50% {
+        background-color: gray;
+    }
+    100% {
+        background-color: goldenrod;
+    }
+}

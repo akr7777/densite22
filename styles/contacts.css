@@ -1,0 +1,116 @@
+@media (max-width: 800px) {
+  .contacts-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+    padding-right: 20px;
+  }
+  .contacts-div p {
+    text-align: start;
+    font-size: 20px;
+  }
+  .contacts-div a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: start;
+    color: black;
+  }
+  .contacts-div img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 800px) {
+  .contacts-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+    padding-right: 20px;
+  }
+  .contacts-div p {
+    text-align: start;
+    font-size: 20px;
+  }
+  .contacts-div a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: start;
+    color: black;
+  }
+  .contacts-div img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.contacts-sub-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  text-align: center;
+}
+.contacts-sub-div p {
+  text-align: center;
+}
+
+.contacts-sub-div-outer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.iframe-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}

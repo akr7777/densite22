@@ -1,0 +1,59 @@
+@import "variables";
+
+$photo_scale: 170px;
+
+
+@media (max-width: $small-screen) {
+    .feedback_div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+    }
+}
+
+@media (min-width: $small-screen) and (max-width: $medium-screen) {
+    .feedback_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+    }
+}
+
+@media (min-width: $medium-screen) {
+    .feedback_div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+    }
+}
+
+
+.feedback_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    // background-color: red;
+}
+
+.feedback_photo {
+    width: $photo_scale;
+    height: $photo_scale;
+    border-radius: 50%;
+    border: $card-border-width solid plum;
+
+    img {
+        width: $photo_scale;
+        height: $photo_scale;
+        border-radius: 50%;
+    }
+}

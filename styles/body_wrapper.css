@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+body h1 {
+  font-size: 40px;
+}
+
+.wrapped_div_1 {
+  background-color: rgb(225, 215, 215);
+}
+
+@media (max-width: 500px) {
+  .wrapped_div_2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .wrapped_div_2 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 800px) {
+  .wrapped_div_2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

@@ -1,0 +1,73 @@
+.benefits_div_0 {
+  padding-right: 20px;
+}
+
+@media (max-width: 500px) {
+  .benefits_div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .benefits_div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+}
+@media (min-width: 800px) {
+  .benefits_div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px;
+  }
+}
+.benefit_card {
+  border: 3px solid white;
+  border-radius: 15px;
+  min-height: 250px;
+  -webkit-animation: benefitCard 4s infinite;
+          animation: benefitCard 4s infinite;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.benefit_card h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.benefit_card p {
+  font-size: 20px;
+}
+
+@-webkit-keyframes benefitCard {
+  0% {
+    background-color: goldenrod;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: goldenrod;
+  }
+}
+
+@keyframes benefitCard {
+  0% {
+    background-color: goldenrod;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: goldenrod;
+  }
+}

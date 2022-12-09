@@ -1,0 +1,61 @@
+@media (max-width: 500px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 20px;
+    padding-right: 10px;
+  }
+}
+.one_service {
+  background-color: grey;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  border: 3px solid white;
+}
+.one_service img {
+  width: 70px;
+  height: 70px;
+}
+.one_service h1 {
+  font-size: 30px;
+}
+.one_service p {
+  font-size: 20px;
+}
+.one_service li {
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.one_service:hover {
+  background-color: dimgray;
+  -webkit-box-shadow: 5px 5px gray;
+          box-shadow: 5px 5px gray;
+}
