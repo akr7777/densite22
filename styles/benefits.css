@@ -1,7 +1,3 @@
-.benefits_div_0 {
-  padding-right: 20px;
-}
-
 @media (max-width: 500px) {
   .benefits_div {
     display: -ms-grid;
@@ -9,6 +5,7 @@
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 10px 20px;
+    padding-right: 20px;
   }
 }
 @media (min-width: 500px) and (max-width: 800px) {
@@ -18,6 +15,7 @@
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10px 20px;
+    padding-right: 20px;
   }
 }
 @media (min-width: 800px) {
@@ -27,6 +25,7 @@
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 20px;
+    padding-right: 20px;
   }
 }
 .benefit_card {

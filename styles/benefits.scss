@@ -1,14 +1,12 @@
 @import "variables";
 
-.benefits_div_0 {
-    padding-right: $card_padding_right;
-}
 
 @media (max-width: $small-screen) {
     .benefits_div {
         display: grid;
         grid-template-columns: 1fr;
         gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+        padding-right: $card_padding_right;
     }
 }
 
@@ -17,6 +15,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+        padding-right: $card_padding_right;
     }
 }
 
@@ -25,6 +24,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: $gap_between_cards_vertical $gap_between_cards_horizontal;
+        padding-right: $card_padding_right;
     }
 }
 
