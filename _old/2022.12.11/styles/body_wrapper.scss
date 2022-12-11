@@ -1,0 +1,44 @@
+@import "variables";
+
+$mainPage_bgColor: black;
+$mainPage_fontColor: white;
+
+body {
+    //background-color: $body-bgcolor;
+    background-color: $mainPage_bgColor;
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.wrapped_div_1 {
+    background-color: $body-bgcolor;
+    
+}
+@media (max-width: $small-screen) {
+    .wrapped_div_2 {
+        margin-left: $wrap-margin-sides-small;
+        margin-right: $wrap-margin-sides-small;
+        padding-left: $wrap-padding-sides-small;
+        padding-right: $wrap-padding-sides-small;
+    }
+}
+@media (min-width: $small-screen) and (max-width: $medium-screen) {
+    .wrapped_div_2 {
+        margin-left: $wrap-margin-sides-medium;
+        margin-right: $wrap-margin-sides-medium;
+        padding-left: $wrap-padding-sides-medium;
+        padding-right: $wrap-padding-sides-medium;
+    }
+}
+@media  (min-width: $medium-screen) {
+    .wrapped_div_2 {
+        margin-left: $wrap-margin-sides-large;
+        margin-right: $wrap-margin-sides-large;
+        padding-left: $wrap-padding-sides-large;
+        padding-right: $wrap-padding-sides-large;
+    }
+}
+
